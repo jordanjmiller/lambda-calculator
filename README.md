@@ -1,8 +1,13 @@
 Things to make better if I revist this:
+
 Allow double digit numbers
+
 Code % button
+
 Code . button
+
 Have hitting numbers after =s be the same as hitting C first and starting fresh
+
 Better styling
 
 # Module Project: React-UI-Components - Lambda Calculator
