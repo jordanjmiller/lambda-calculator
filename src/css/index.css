@@ -1,0 +1,96 @@
+.test {
+  background-color: red;
+}
+.buttonContainerMaster {
+  margin: 0 auto;
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.buttonContainerOne {
+  width: 74%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.buttonContainerTwo {
+  align-self: flex-start;
+  margin: -94px 0 0 0;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  order: 3;
+}
+.numbers {
+  margin-top: 10px;
+  width: 99px;
+  background-color: darkblue;
+  color: white;
+  padding: 33px;
+  border-radius: 100%;
+  border: none;
+  font-size: 1.6rem;
+}
+.numbers:hover {
+  background-color: white;
+  color: darkblue;
+  font-weight: bold;
+}
+.numberContainer {
+  order: 2;
+}
+.specials {
+  margin-top: 25px;
+  width: 99px;
+  background-color: blue;
+  color: white;
+  padding: 33px;
+  border-radius: 100%;
+  border: none;
+  font-size: 1.6rem;
+}
+.specials:hover {
+  background-color: white;
+  color: blue;
+  font-weight: bold;
+}
+.specialsContainer {
+  order: 1;
+}
+.operators {
+  margin-bottom: 10px;
+  margin-left: 18px;
+  width: 99px;
+  background-color: steelblue;
+  color: white;
+  padding: 33px;
+  border-radius: 100%;
+  border: none;
+  font-size: 1.6rem;
+}
+.operators:hover {
+  background-color: white;
+  color: steelblue;
+  font-weight: bold;
+}
+.zero {
+  width: 66%;
+  background-color: darkblue;
+  color: white;
+  padding: 10%;
+  border-radius: 2600px;
+  border: none;
+  font-size: 1.6rem;
+}
+.zero:hover {
+  background-color: white;
+  color: darkblue;
+  font-weight: bold;
+}
+.logo-container {
+  margin-top: 8%;
+  margin-left: 8%;
+}

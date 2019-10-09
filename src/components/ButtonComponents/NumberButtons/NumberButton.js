@@ -3,8 +3,29 @@ import React from "react";
 
 const NumberButton = (props) => {
   function initial(){
-    props.setCurrentValue(props.numbers);
-    props.setInitialValue(false);
+    if (props.numbers === '0')
+    {
+      return <button className='numbers zero' onClick={() => {
+        props.setInitialValue(false); props.setNumberValue(props.numbers); props.setNumberSelectedValue(true);}}>{props.numbers}</button>
+    }
+    else if (props.numbers === '.')
+    {
+      return <button className='numbers' onClick={() => {
+        props.setInitialValue(false); props.setNumberValue(props.numbers); props.setNumberSelectedValue(true);}}>{props.numbers}</button>
+    }
+      return <button className='numbers' onClick={() => {
+        props.setInitialValue(false); props.setCurrentValue(props.numbers); props.setNumberSelectedValue(true);}}>{props.numbers}</button>
+  }
+  function numberChecker(){
+    if (props.numbers === '0')
+    {
+      return <button className='numbers zero' onClick={() => {props.setNumberValue(props.numbers); props.setNumberSelectedValue(true);}}>{props.numbers}</button>
+    }
+    // else if (props.numbers === '.')
+    // {
+    //   return <button className='numbers' onClick={() => {props.setNumberValue(props.numbers); props.setNumberSelectedValue(true);}}>{props.numbers}</button>
+    // }
+    return <button className='numbers' onClick={() => {props.setNumberValue(props.numbers); props.setNumberSelectedValue(true);}}>{props.numbers}</button>
   }
   return (
     <>
@@ -12,8 +33,8 @@ const NumberButton = (props) => {
       {/* <button>{props.numbers}</button> */}
       {
       props.initialValue
-      ? <button onClick={() => initial()}>{props.numbers}</button>
-      : <button onClick={() => {props.setNumberValue(props.numbers); props.setNumberSelectedValue(true);}}>{props.numbers}</button>
+      ? initial()
+      : numberChecker()
       }
     </>
   );

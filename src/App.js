@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import "./css/index.css";
 import Numbers from '../src/components/ButtonComponents/NumberButtons/Numbers.js';
 import Operators from '../src/components/ButtonComponents/OperatorButtons/Operators.js';
 import Specials from '../src/components/ButtonComponents/SpecialButtons/Specials.js';
@@ -28,7 +29,7 @@ function App() {
     <div className="container">
       <Logo />
       {/* <NumberButton /> */}
-      <div className="App">
+      <div className="buttonContainerMaster">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         <Display 
         current={currentValue} 
@@ -50,10 +51,15 @@ function App() {
         displayStringValue={displayStringValue} setDisplayStringValue={setDisplayStringValue}
         numberSelectedValue={numberSelectedValue} setNumberSelectedValue={setNumberSelectedValue}
         />
-        <Specials />
+        <Specials 
+        currentValue={currentValue} setCurrentValue={setCurrentValue}
+        initialValue={initialValue} setInitialValue={setInitialValue}
+        setNumberSelectedValue={setNumberSelectedValue} 
+        setDisplayStringValue={setDisplayStringValue}
+        />
       </div>
-      <p>Op Value: {operatorValue}</p>
-      <p>Num Value: {numberValue}</p>
+      {/* <p className='test'>Op Value: {operatorValue}</p>
+      <p>Num Value: {numberValue}</p> */}
     </div>
   );
 }

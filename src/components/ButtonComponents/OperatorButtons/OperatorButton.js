@@ -28,8 +28,8 @@ const OperatorButton = (props) => {
       {/* <button onClick={() => {props.operatorSetter(props.value)}}>{props.char}</button> */}
       {
         props.value === '=' 
-        ? <button onClick={() => {equalOperator()}}>{props.char}</button>
-        : <button onClick={() => {props.setOperatorValue(props.value); 
+        ? <button className="operators" onClick={() => {equalOperator()}}>{props.char}</button>
+        : <button className="operators" onClick={() => {props.setOperatorValue(props.value); 
           props.setDisplayStringValue(true);
           props.setNumberSelectedValue(false);}}>{props.char}</button>
       }
