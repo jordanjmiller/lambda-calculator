@@ -1,3 +1,15 @@
+Things to make better if I revist this:
+
+Allow double digit numbers
+
+Code % button
+
+Code . button
+
+Have hitting numbers after =s be the same as hitting C first and starting fresh
+
+Better styling
+
 # Module Project: React-UI-Components - Lambda Calculator
 
 In this module project you will build your very own calculator app. You have been provided with a file structure and suggested pattern for constructing your components. Be sure to connect all necessary files and pass the data using the techniques from the module.
@@ -124,3 +136,5 @@ Do not attempt stretch problems until MVP has been reached and a final commit ha
 - Finish styling all of the buttons and get your calculator to closely resemble the given design spec. 
 - Add some icons to improve the operator characters aesthetics. Research any icon/font library and implement it into your project.
 - Convert your CSS styling to use Sass/Scss
+
+jordan miller

@@ -1,0 +1,84 @@
+
+.test{
+    background-color: red;
+}
+.buttonContainerMaster{
+    // border:2px solid black;
+    // background-color: black;
+    margin: 0 auto;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.buttonContainerOne{
+    // border:2px solid black;
+    // background-color: black;
+    // margin: 0 auto;
+    width: 74%;
+    // flex: 1 1 100px;
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.buttonContainerTwo{
+    // border:2px solid black;
+    align-self: flex-start;
+    margin: -94px 0 0 0;
+    // background-color: black;
+    // margin: 0 auto;
+    
+    width: 20%;
+    // height: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    // flex-grow: 5;
+    align-items: flex-end;
+    order: 3;
+}
+.numbers{
+    margin-top: 10px;
+    .parabutton(@width:99px, darkblue, white, 33px, 100%);
+}
+.numberContainer{
+    order: 2;
+}
+.specials{
+    margin-top: 25px;
+    .parabutton(@width:99px, blue, white, 33px, 100%);
+}
+.specialsContainer{
+    order: 1;
+}
+.operators{
+    margin-bottom: 10px;
+    margin-left: 18px;
+    .parabutton(@width:99px, steelblue, white, 33px, 100%);
+}
+.zero{
+    .parabutton(@width:66%, darkblue, white, 10%, 2600px);
+}
+.logo-container{
+    margin-top: 8%;
+    margin-left: 8%;
+}
+
+//mixins
+.parabutton(@width:83%, @bcolor:@actualbuttoncolor, @tcolor:white, @padding:5%, @radius:13px){
+    width: @width;
+    background-color: @bcolor;
+    color: @tcolor;
+    padding: @padding;
+    border-radius: @radius;
+    border: none;
+    font-size: 1.6rem;
+
+    &:hover{
+    background-color: @tcolor;
+    color: @bcolor;
+    font-weight: bold;
+    // border: 1px solid @bcolor;
+    }
+}
